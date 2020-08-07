@@ -21,7 +21,7 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
-  <script ></script>
+  <script></script>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -34,11 +34,24 @@
       </div>
 
       <div class="nav-links">
-        <div class="display"><button> <img src="./images/icon-hamburger.svg"></button></div>
-        <a href="#" class="visible">How we work</a>
-        <a href="#" class="visible">Blog</a>
-        <a href="#" class="visible">Account</a>
-        <button type="submit" class="nav-button">View plans</button>
+        <div class="display" id="display"><button onclick="myfunction()"><img src="./images/icon-hamburger.svg"></button></div>
+        <div class="display-after" id="display-after"><button onclick="myfunction()"><img src="./images/icon-close.svg"></button></div>
+
+
+        <div class="visibles" id="visibles">
+          <a href="#">How we work</a>
+          <a href="#">Blog</a>
+          <a href="#">Account</a>
+          <button type="submit" class="nav-button">View plans</button>
+        </div>
+
+
+        <div class="visible" id="visible" style="display: none">
+         <li><a href="#" class="p">How we work</a></li>
+         <li><a href="#" class="p">Blog</a></li>
+         <li><a href="#" class="p">Account</a></li>
+         <li><button type="submit" class="nav-button" class="p">View plans</button></li>
+        </div>
       </div>
     </div>
 
@@ -171,7 +184,7 @@
       Coded by <a href="#">Naggenda Joshua</a>.
     </div>
   </footer>
-
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
